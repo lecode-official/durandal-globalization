@@ -2,7 +2,7 @@
   "name": "typescript-globalization",
   "displayName": "TypeScript Globalization",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple globalization library written in TypeScript. It supports numerical, date, and time processing based on different cultures.",
   "repository": {
     "type": "git",

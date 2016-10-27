@@ -45,7 +45,11 @@ declare module 'Globalization/CultureInfo' {
 	    /**
 	     * Gets the current culture of the web application. If the culture requested by the browser is not supported, then the default culture will be returned.
 	     */
-	    static readonly currentCulture: CultureInfo;
+	    /**
+	     * Sets the current culture of the web application.
+	     * @param {CultureInfo} newCurrentCulture The new current culture of the web application.
+	     */
+	    static currentCulture: CultureInfo;
 	    /**
 	     * Gets the name of the culture, e.g. "de-DE" or "en-US". It must be the name of a specific culture, invariant cultures are not allowed (i.e. "en-US" instead of "en").
 	     */

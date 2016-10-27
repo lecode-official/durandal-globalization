@@ -99,6 +99,14 @@ class CultureInfo {
         return CultureInfo._currentCulture;
     }
 
+    /**
+     * Sets the current culture of the web application.
+     * @param {CultureInfo} newCurrentCulture The new current culture of the web application.
+     */
+    public static set currentCulture(newCurrentCulture: CultureInfo) {
+        CultureInfo._currentCulture = newCurrentCulture;
+    }
+
     // #endregion
 
     // #region Public Properties

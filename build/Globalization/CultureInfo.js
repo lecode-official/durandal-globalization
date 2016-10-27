@@ -38,6 +38,13 @@ define("Globalization/CultureInfo", ["require", "exports", "Globalization/Numeri
                 // Returns the current culture
                 return CultureInfo._currentCulture;
             },
+            /**
+             * Sets the current culture of the web application.
+             * @param {CultureInfo} newCurrentCulture The new current culture of the web application.
+             */
+            set: function (newCurrentCulture) {
+                CultureInfo._currentCulture = newCurrentCulture;
+            },
             enumerable: true,
             configurable: true
         });
