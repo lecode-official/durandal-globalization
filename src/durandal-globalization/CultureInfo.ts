@@ -1,9 +1,9 @@
 ﻿
-///<amd-module name='Globalization/CultureInfo'/>
+///<amd-module name='durandal-globalization/CultureInfo'/>
 
 // #region Import Directives
 
-import NumericFormatInfo = require("Globalization/NumericFormatInfo");
+import NumericFormatInfo = require("durandal-globalization/NumericFormatInfo");
 
 // #endregion
 
@@ -78,7 +78,7 @@ class CultureInfo {
     /**
      * Contains an object that contains information about the specific numeric format of the culture.
      */
-    private _numericFormat: NumericFormatInfo; 
+    private _numericFormat: NumericFormatInfo;
 
 
     // #endregion
@@ -151,7 +151,7 @@ class CultureInfo {
      */
     public get numericFormat(): NumericFormatInfo {
         return this._numericFormat;
-    } 
+    }
 
     // #endregion
 
@@ -167,7 +167,7 @@ class CultureInfo {
      * @param {NumericFormatInfo} numericFormat The object that contains information about the specific numeric format of the culture.
      */
     public static registerSpecificCulture(name: string, twoLetterIsoCode: string, displayName: string, languageName: string, englishName: string, numericFormat: NumericFormatInfo) {
-        
+
         // Checks if the default cultures already exist, if not, then they are created
         CultureInfo.initializeSpecificCultures();
 

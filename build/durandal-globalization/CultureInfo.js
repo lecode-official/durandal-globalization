@@ -1,5 +1,5 @@
-///<amd-module name='Globalization/CultureInfo'/>
-define("Globalization/CultureInfo", ["require", "exports", "Globalization/NumericFormatInfo"], function (require, exports, NumericFormatInfo) {
+///<amd-module name='durandal-globalization/CultureInfo'/>
+define("durandal-globalization/CultureInfo", ["require", "exports", "durandal-globalization/NumericFormatInfo"], function (require, exports, NumericFormatInfo) {
     "use strict";
     // #endregion
     /**

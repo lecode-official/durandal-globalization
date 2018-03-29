@@ -1,5 +1,5 @@
-///<amd-module name='Globalization/TimeSpan'/>
-define("Globalization/TimeSpan", ["require", "exports", "Globalization/CultureInfo", "moment"], function (require, exports, CultureInfo, moment) {
+///<amd-module name='durandal-globalization/TimeSpan'/>
+define("durandal-globalization/TimeSpan", ["require", "exports", "durandal-globalization/CultureInfo", "moment"], function (require, exports, CultureInfo, moment) {
     "use strict";
     // #endregion
     /**

@@ -35,5 +35,6 @@
     "gulp-typescript": "^3.0.1",
     "run-sequence": "1.2.2",
     "typescript": "^2.0.3"
-  }
+  },
+  "types": "./build/durandal-globalization.d.ts"
 }

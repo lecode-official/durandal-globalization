@@ -1,9 +1,9 @@
 ﻿
-///<amd-module name='Globalization/Numeric'/>
+///<amd-module name='durandal-globalization/Numeric'/>
 
 // #region Import Directives
 
-import CultureInfo = require("Globalization/CultureInfo");
+import CultureInfo = require("durandal-globalization/CultureInfo");
 import numeral = require("numeral");
 
 // #endregion
@@ -17,14 +17,14 @@ class Numeric {
 
     /**
      * Initializes a new Numeric instance.
-     * @param {number} value The value of the numeric. 
+     * @param {number} value The value of the numeric.
      */
     constructor(value: number) {
         this.numericValue = numeral(value);
     }
 
     // #endregion
-    
+
     // #region Private Static Fields
 
     /**
@@ -47,13 +47,13 @@ class Numeric {
 
     /**
      * Switches the language of the numeral module to that is used the numeric format of the culture.
-     * @param {CultureInfo} culture The culture which should be used to switch the numeral language to. 
+     * @param {CultureInfo} culture The culture which should be used to switch the numeral language to.
      */
     private static switchLanguage(culture: CultureInfo) {
 
         // Checks whether the language has already been registered
         if (!Numeric.registeredLanguages.some(registeredLanguage => culture.name === registeredLanguage)) {
-            
+
             // Registers the language of the culture
             numeral.language(culture.name, {
                 delimiters: {
@@ -91,21 +91,21 @@ class Numeric {
      * @return {Numeric} Returns the created Numeric instance.
      */
     public static fromString(value: string, culture?: CultureInfo): Numeric {
-        
+
         // Switches the language of numeric in order to interpret the string in the right culture
         Numeric.switchLanguage(!!culture ? culture : CultureInfo.currentCulture);
-        
+
         // Returns the created Numeric instance
         return new Numeric(numeral().unformat(value));
     }
-    
+
     /**
      * Initializes a new Numeric instance from a number.
      * @param {number} value The value of the number.
      * @return {Numeric} Returns the created Numeric instance.
      */
     public static fromNumber(value: number): Numeric {
-        
+
         // Returns the created Numeric instance
         return new Numeric(value);
     }
@@ -116,7 +116,7 @@ class Numeric {
 
     /**
      * Gets the value of the numeric in case the object should take part in an arithmetic operation.
-     * @return {number} Returns the value of the numeric as number. 
+     * @return {number} Returns the value of the numeric as number.
      */
     public valueOf(): number {
         return this.numericValue.value();
@@ -124,7 +124,7 @@ class Numeric {
 
     /**
      * Gets the value of the numeric as number.
-     * @return {number} Returns the value of the numeric as number. 
+     * @return {number} Returns the value of the numeric as number.
      */
     public toNumber(): number {
         return this.numericValue.value();
@@ -133,7 +133,7 @@ class Numeric {
     /**
      * Gets a string representation of the numeric.
      * @param {string} format The format string.
-     * @param {CultureInfo} culture The format provider that is used to format the string. If none is provided, the current culture is used. 
+     * @param {CultureInfo} culture The format provider that is used to format the string. If none is provided, the current culture is used.
      * @return {string} Returns the string representation of the numeric.
      */
     public toString(format?: string, culture?: CultureInfo): string {

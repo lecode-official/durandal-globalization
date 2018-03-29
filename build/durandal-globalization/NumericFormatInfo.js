@@ -1,5 +1,5 @@
-///<amd-module name='Globalization/NumericFormatInfo'/>
-define("Globalization/NumericFormatInfo", ["require", "exports"], function (require, exports) {
+///<amd-module name='durandal-globalization/NumericFormatInfo'/>
+define("durandal-globalization/NumericFormatInfo", ["require", "exports"], function (require, exports) {
     "use strict";
     /**
      * Represents an object that contains information about a specific number format. This is used by a CultureInfo to determine the default numeric format of the culture.
