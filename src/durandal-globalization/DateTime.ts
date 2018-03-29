@@ -1,11 +1,11 @@
 ﻿
-///<amd-module name='Globalization/DateTime'/>
+///<amd-module name='durandal-globalization/DateTime'/>
 
 // #region Import Directives
 
-import CultureInfo = require("Globalization/CultureInfo");
+import CultureInfo = require("durandal-globalization/CultureInfo");
 import moment = require("moment");
-import TimeSpan = require("Globalization/TimeSpan");
+import TimeSpan = require("durandal-globalization/TimeSpan");
 
 // #endregion
 
@@ -139,11 +139,11 @@ class DateTime {
     // #endregion
 
     // #region Public Static Methods
-    
+
     /**
      * Initializes a new DateTime instance from ticks (unix timestamp in milliseconds).
      * @param {number} value The ticks that represents the date and time.
-     * @return {DateTime} Returns the created DateTime instance. 
+     * @return {DateTime} Returns the created DateTime instance.
      */
     public static fromTicks(value: number): DateTime {
         return new DateTime(value);
@@ -169,7 +169,7 @@ class DateTime {
         } else {
             newMoment = interpretAsUtc ? moment.utc(value, undefined, true) : moment(value, undefined, true);
         }
-        
+
         // Checks if the date time is valid, if so then the new date time is returned, otherwise null is returned
         if (newMoment.isValid()) {
             return new DateTime(newMoment.valueOf());
@@ -177,14 +177,14 @@ class DateTime {
             return null;
         }
     }
-    
+
     // #endregion
 
     // #region Public Methods
 
     /**
      * Gets the value of the date time in case the object should take part in an arithmetic operation.
-     * @return {number} Returns the value of the date time as number. 
+     * @return {number} Returns the value of the date time as number.
      */
     public valueOf(): number {
         return this.dateTimeValue.valueOf();
@@ -192,7 +192,7 @@ class DateTime {
 
     /**
      * Adds the provided time span to the date time.
-     * @param {TimeSpan} value The time span to be added.  
+     * @param {TimeSpan} value The time span to be added.
      * @return {TimeSpan} Returns the current date time in order to easily chain arithmetic operations.
      */
     public add(value: TimeSpan): DateTime {
@@ -202,7 +202,7 @@ class DateTime {
 
     /**
      * Subtracts the provided time span from this date time.
-     * @param {TimeSpan} value The time span to be subtracted.  
+     * @param {TimeSpan} value The time span to be subtracted.
      * @return {TimeSpan} Returns the current date time in order to easily chain arithmetic operations.
      */
     public subtract(value: TimeSpan): DateTime {
@@ -212,7 +212,7 @@ class DateTime {
 
     /**
      * Adds the provided amount of milliseconds to the date time.
-     * @param {number} value The amount of milliseconds to be added.  
+     * @param {number} value The amount of milliseconds to be added.
      * @return {DateTime} Returns the current date time in order to easily chain arithmetic operations.
      */
     public addMilliseconds(value: number): DateTime {
@@ -222,7 +222,7 @@ class DateTime {
 
     /**
      * Subtracts the provided amount of milliseconds to the date time.
-     * @param {number} value The amount of milliseconds to be subtracted.  
+     * @param {number} value The amount of milliseconds to be subtracted.
      * @return {DateTime} Returns the current date time in order to easily chain arithmetic operations.
      */
     public subtractMillisecondss(value: number): DateTime {
@@ -232,7 +232,7 @@ class DateTime {
 
     /**
      * Adds the provided amount of seconds to the date time.
-     * @param {number} value The amount of seconds to be added.  
+     * @param {number} value The amount of seconds to be added.
      * @return {DateTime} Returns the current date time in order to easily chain arithmetic operations.
      */
     public addSeconds(value: number): DateTime {
@@ -242,7 +242,7 @@ class DateTime {
 
     /**
      * Subtracts the provided amount of seconds to the date time.
-     * @param {number} value The amount of seconds to be subtracted.  
+     * @param {number} value The amount of seconds to be subtracted.
      * @return {DateTime} Returns the current date time in order to easily chain arithmetic operations.
      */
     public subtractSeconds(value: number): DateTime {
@@ -252,7 +252,7 @@ class DateTime {
 
     /**
      * Adds the provided amount of minutes to the date time.
-     * @param {number} value The amount of minutes to be added.  
+     * @param {number} value The amount of minutes to be added.
      * @return {DateTime} Returns the current date time in order to easily chain arithmetic operations.
      */
     public addMinutes(value: number): DateTime {
@@ -262,7 +262,7 @@ class DateTime {
 
     /**
      * Subtracts the provided amount of minutes to the date time.
-     * @param {number} value The amount of minutes to be subtracted.  
+     * @param {number} value The amount of minutes to be subtracted.
      * @return {DateTime} Returns the current date time in order to easily chain arithmetic operations.
      */
     public subtractMinutes(value: number): DateTime {
@@ -272,7 +272,7 @@ class DateTime {
 
     /**
      * Adds the provided amount of hours to the date time.
-     * @param {number} value The amount of hours to be added.  
+     * @param {number} value The amount of hours to be added.
      * @return {DateTime} Returns the current date time in order to easily chain arithmetic operations.
      */
     public addHours(value: number): DateTime {
@@ -282,7 +282,7 @@ class DateTime {
 
     /**
      * Subtracts the provided amount of hours to the date time.
-     * @param {number} value The amount of hours to be subtracted.  
+     * @param {number} value The amount of hours to be subtracted.
      * @return {DateTime} Returns the current date time in order to easily chain arithmetic operations.
      */
     public subtractHours(value: number): DateTime {
@@ -292,7 +292,7 @@ class DateTime {
 
     /**
      * Adds the provided amount of days to the date time.
-     * @param {number} value The amount of days to be added.  
+     * @param {number} value The amount of days to be added.
      * @return {DateTime} Returns the current date time in order to easily chain arithmetic operations.
      */
     public addDays(value: number): DateTime {
@@ -302,7 +302,7 @@ class DateTime {
 
     /**
      * Subtracts the provided amount of days to the date time.
-     * @param {number} value The amount of days to be subtracted.  
+     * @param {number} value The amount of days to be subtracted.
      * @return {DateTime} Returns the current date time in order to easily chain arithmetic operations.
      */
     public subtractDays(value: number): DateTime {
@@ -312,7 +312,7 @@ class DateTime {
 
     /**
      * Adds the provided amount of months to the date time.
-     * @param {number} value The amount of months to be added.  
+     * @param {number} value The amount of months to be added.
      * @return {DateTime} Returns the current date time in order to easily chain arithmetic operations.
      */
     public addMonths(value: number): DateTime {
@@ -322,7 +322,7 @@ class DateTime {
 
     /**
      * Subtracts the provided amount of months to the date time.
-     * @param {number} value The amount of months to be subtracted.  
+     * @param {number} value The amount of months to be subtracted.
      * @return {DateTime} Returns the current date time in order to easily chain arithmetic operations.
      */
     public subtractMonths(value: number): DateTime {
@@ -332,7 +332,7 @@ class DateTime {
 
     /**
      * Adds the provided amount of years to the date time.
-     * @param {number} value The amount of years to be added.  
+     * @param {number} value The amount of years to be added.
      * @return {DateTime} Returns the current date time in order to easily chain arithmetic operations.
      */
     public addYears(value: number): DateTime {
@@ -342,7 +342,7 @@ class DateTime {
 
     /**
      * Subtracts the provided amount of years to the date time.
-     * @param {number} value The amount of years to be subtracted.  
+     * @param {number} value The amount of years to be subtracted.
      * @return {DateTime} Returns the current date time in order to easily chain arithmetic operations.
      */
     public subtractYears(value: number): DateTime {
@@ -363,11 +363,11 @@ class DateTime {
     public makeLocal() {
         this.dateTimeValue = this.dateTimeValue.local();
     }
-    
+
     /**
      * Gets a string representation of the date time.
      * @param {string} format The format string.
-     * @param {CultureInfo} culture The format provider that is used to format the string. If none is provided, the current culture is used. 
+     * @param {CultureInfo} culture The format provider that is used to format the string. If none is provided, the current culture is used.
      * @return {string} Returns the string representation of the date time.
      */
     public toString(format?: string, culture?: CultureInfo): string {
@@ -383,7 +383,7 @@ class DateTime {
 
     /**
     * Gets a string representation of the date time.
-    * @param {CultureInfo} culture The format provider that is used to format the string. If none is provided, the current culture is used. 
+    * @param {CultureInfo} culture The format provider that is used to format the string. If none is provided, the current culture is used.
     */
     public fromNow(culture?: CultureInfo): string {
 
@@ -394,7 +394,7 @@ class DateTime {
         return this.dateTimeValue.fromNow();
     }
 
-    // #endregion    
+    // #endregion
 }
 
 // Exports the module, so that it can be loaded by Require

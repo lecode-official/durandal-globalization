@@ -1,5 +1,5 @@
-declare module 'Globalization/CultureInfo' {
-	import NumericFormatInfo = require("Globalization/NumericFormatInfo"); class CultureInfo {
+declare module 'durandal-globalization/CultureInfo' {
+	import NumericFormatInfo = require("durandal-globalization/NumericFormatInfo"); class CultureInfo {
 	    /**
 	     * Initializes a new CultureInfo instance.
 	     * @param {string} name The name of the culture, e.g. "de-DE" or "en-US". It must be the name of a specific culture, invariant cultures are not allowed (i.e. "en-US" instead of "en").
@@ -98,9 +98,9 @@ declare module 'Globalization/CultureInfo' {
 	export = CultureInfo;
 
 }
-declare module 'Globalization/DateTime' {
-	import CultureInfo = require("Globalization/CultureInfo");
-	import TimeSpan = require("Globalization/TimeSpan"); class DateTime {
+declare module 'durandal-globalization/DateTime' {
+	import CultureInfo = require("durandal-globalization/CultureInfo");
+	import TimeSpan = require("durandal-globalization/TimeSpan"); class DateTime {
 	    /**
 	     * Initializes a new DateTime instance.
 	     * @param {number} ticks The ticks (unix timestamp in milliseconds) that represents the date and time.
@@ -301,8 +301,8 @@ declare module 'Globalization/DateTime' {
 	export = DateTime;
 
 }
-declare module 'Globalization/Numeric' {
-	import CultureInfo = require("Globalization/CultureInfo"); class Numeric {
+declare module 'durandal-globalization/Numeric' {
+	import CultureInfo = require("durandal-globalization/CultureInfo"); class Numeric {
 	    /**
 	     * Initializes a new Numeric instance.
 	     * @param {number} value The value of the numeric.
@@ -355,7 +355,7 @@ declare module 'Globalization/Numeric' {
 	export = Numeric;
 
 }
-declare module 'Globalization/NumericFormatInfo' {
+declare module 'durandal-globalization/NumericFormatInfo' {
 	 class NumericFormatInfo {
 	    /**
 	     * Initializes a new NumericFormatInfo instance.
@@ -400,9 +400,9 @@ declare module 'Globalization/NumericFormatInfo' {
 	export = NumericFormatInfo;
 
 }
-declare module 'Globalization/TimeSpan' {
-	import CultureInfo = require("Globalization/CultureInfo");
-	import DateTime = require("Globalization/DateTime"); class TimeSpan {
+declare module 'durandal-globalization/TimeSpan' {
+	import CultureInfo = require("durandal-globalization/CultureInfo");
+	import DateTime = require("durandal-globalization/DateTime"); class TimeSpan {
 	    /**
 	     * Initializes a new TimeSpan instance.
 	     * @param {number} ticks The ticks (in milliseconds) that represents the time span.

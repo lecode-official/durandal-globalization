@@ -1,5 +1,5 @@
-///<amd-module name='Globalization/DateTime'/>
-define("Globalization/DateTime", ["require", "exports", "Globalization/CultureInfo", "moment"], function (require, exports, CultureInfo, moment) {
+///<amd-module name='durandal-globalization/DateTime'/>
+define("durandal-globalization/DateTime", ["require", "exports", "durandal-globalization/CultureInfo", "moment"], function (require, exports, CultureInfo, moment) {
     "use strict";
     // #endregion
     /**

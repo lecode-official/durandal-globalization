@@ -1,5 +1,5 @@
 ﻿
-///<amd-module name='Globalization/NumericFormatInfo'/>
+///<amd-module name='durandal-globalization/NumericFormatInfo'/>
 
 /**
  * Represents an object that contains information about a specific number format. This is used by a CultureInfo to determine the default numeric format of the culture.
@@ -31,12 +31,12 @@ class NumericFormatInfo {
     // #endregion
 
     // #region Public Properties
-    
+
     /**
      * Gets or sets the decimal separator.
      */
     public decimalSeparator: string;
-    
+
     /**
      * Gets or sets the group separator, which is the separator used for thousands, millions, etc.
      */
@@ -46,22 +46,22 @@ class NumericFormatInfo {
      * Gets or sets the abbreviation for a thousand.
      */
     public thousandAbbreviation: string;
-    
+
     /**
      * Gets or sets the abbreviation for a million.
      */
     public millionAbbreviation: string;
-    
+
     /**
      * Gets or sets the abbreviation for a billion.
      */
     public billionAbbreviation: string;
-    
+
     /**
      * Gets or sets the abbreviation for a trillion.
      */
     public trillionAbbreviation: string;
-    
+
     /**
      * Gets or sets the symbol of the currency.
      */

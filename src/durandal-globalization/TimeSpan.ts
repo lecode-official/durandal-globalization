@@ -1,10 +1,10 @@
 ﻿
-///<amd-module name='Globalization/TimeSpan'/>
+///<amd-module name='durandal-globalization/TimeSpan'/>
 
 // #region Import Directives
 
-import CultureInfo = require("Globalization/CultureInfo");
-import DateTime = require("Globalization/DateTime");
+import CultureInfo = require("durandal-globalization/CultureInfo");
+import DateTime = require("durandal-globalization/DateTime");
 import moment = require("moment");
 
 // #endregion
@@ -86,11 +86,11 @@ class TimeSpan {
     // #endregion
 
     // #region Public Static Methods
-    
+
     /**
      * Initializes a new TimeSpan instance from ticks (in milliseconds).
      * @param {number} value The ticks that represents the time span.
-     * @return {TimeSpan} Returns the created TimeSpan instance. 
+     * @return {TimeSpan} Returns the created TimeSpan instance.
      */
     public static fromTicks(value: number): TimeSpan {
         return new TimeSpan(value);
@@ -99,7 +99,7 @@ class TimeSpan {
     /**
      * Initializes a new TimeSpan instance from milliseconds.
      * @param {number} value The milliseconds that represents the time span.
-     * @return {TimeSpan} Returns the created TimeSpan instance. 
+     * @return {TimeSpan} Returns the created TimeSpan instance.
      */
     public static fromMilliseconds(value: number): TimeSpan {
         return TimeSpan.fromTicks(value);
@@ -108,7 +108,7 @@ class TimeSpan {
     /**
      * Initializes a new TimeSpan instance from seconds.
      * @param {number} value The seconds that represents the time span.
-     * @return {TimeSpan} Returns the created TimeSpan instance. 
+     * @return {TimeSpan} Returns the created TimeSpan instance.
      */
     public static fromSeconds(value: number): TimeSpan {
         return TimeSpan.fromTicks(value * 1000);
@@ -117,7 +117,7 @@ class TimeSpan {
     /**
      * Initializes a new TimeSpan instance from minutes.
      * @param {number} value The minutes that represents the time span.
-     * @return {TimeSpan} Returns the created TimeSpan instance. 
+     * @return {TimeSpan} Returns the created TimeSpan instance.
      */
     public static fromMinutes(value: number): TimeSpan {
         return TimeSpan.fromSeconds(value * 60);
@@ -126,17 +126,17 @@ class TimeSpan {
     /**
      * Initializes a new TimeSpan instance from hours.
      * @param {number} value The hours that represents the time span.
-     * @return {TimeSpan} Returns the created TimeSpan instance. 
+     * @return {TimeSpan} Returns the created TimeSpan instance.
      */
     public static fromHours(value: number): TimeSpan {
         return TimeSpan.fromMinutes(value * 60);
     }
-    
+
     /**
      * Initializes a new TimeSpan instance from a date time. If a second date time is given, the difference is calculated.
      * @param {DateTime} first The date time that represents the time span.
      * @param {DateTime} second The date time that is used to calculate the difference to the first date time.
-     * @return {TimeSpan} Returns the created TimeSpan instance. 
+     * @return {TimeSpan} Returns the created TimeSpan instance.
      */
     public static fromDateTime(first: DateTime, second?: DateTime): TimeSpan {
         if (!!second) {
@@ -152,15 +152,15 @@ class TimeSpan {
 
     /**
      * Gets the value of the time span in case the object should take part in an arithmetic operation.
-     * @return {number} Returns the value of the time span as number. 
+     * @return {number} Returns the value of the time span as number.
      */
     public valueOf(): number {
         return this.timeSpanValue.valueOf();
     }
-    
+
     /**
      * Adds the provided time span to this time span.
-     * @param {TimeSpan} value The time span to be added.  
+     * @param {TimeSpan} value The time span to be added.
      * @return {TimeSpan} Returns the current time span in order to easily chain arithmetic operations.
      */
     public add(value: TimeSpan): TimeSpan {
@@ -170,7 +170,7 @@ class TimeSpan {
 
     /**
      * Subtracts the provided time span from this time span.
-     * @param {TimeSpan} value The time span to be subtracted.  
+     * @param {TimeSpan} value The time span to be subtracted.
      * @return {TimeSpan} Returns the current time span in order to easily chain arithmetic operations.
      */
     public subtract(value: TimeSpan): TimeSpan {
@@ -180,7 +180,7 @@ class TimeSpan {
 
     /**
      * Adds the provided amount of milliseconds to the time span.
-     * @param {number} value The amount of milliseconds to be added.  
+     * @param {number} value The amount of milliseconds to be added.
      * @return {TimeSpan} Returns the current time span in order to easily chain arithmetic operations.
      */
     public addMilliseconds(value: number): TimeSpan {
@@ -190,7 +190,7 @@ class TimeSpan {
 
     /**
      * Subtracts the provided amount of milliseconds to the time span.
-     * @param {number} value The amount of milliseconds to be subtracted.  
+     * @param {number} value The amount of milliseconds to be subtracted.
      * @return {TimeSpan} Returns the current time span in order to easily chain arithmetic operations.
      */
     public subtractMilliseconds(value: number): TimeSpan {
@@ -200,7 +200,7 @@ class TimeSpan {
 
     /**
      * Adds the provided amount of seconds to the time span.
-     * @param {number} value The amount of seconds to be added.  
+     * @param {number} value The amount of seconds to be added.
      * @return {TimeSpan} Returns the current time span in order to easily chain arithmetic operations.
      */
     public addSeconds(value: number): TimeSpan {
@@ -210,7 +210,7 @@ class TimeSpan {
 
     /**
      * Subtracts the provided amount of seconds to the time span.
-     * @param {number} value The amount of seconds to be subtracted.  
+     * @param {number} value The amount of seconds to be subtracted.
      * @return {TimeSpan} Returns the current time span in order to easily chain arithmetic operations.
      */
     public subtractSeconds(value: number): TimeSpan {
@@ -220,7 +220,7 @@ class TimeSpan {
 
     /**
      * Adds the provided amount of minutes to the time span.
-     * @param {number} value The amount of minutes to be added.  
+     * @param {number} value The amount of minutes to be added.
      * @return {TimeSpan} Returns the current time span in order to easily chain arithmetic operations.
      */
     public addMinutes(value: number): TimeSpan {
@@ -230,7 +230,7 @@ class TimeSpan {
 
     /**
      * Subtracts the provided amount of minutes to the time span.
-     * @param {number} value The amount of minutes to be subtracted.  
+     * @param {number} value The amount of minutes to be subtracted.
      * @return {TimeSpan} Returns the current time span in order to easily chain arithmetic operations.
      */
     public subtractMinutes(value: number): TimeSpan {
@@ -240,7 +240,7 @@ class TimeSpan {
 
     /**
      * Adds the provided amount of hours to the time span.
-     * @param {number} value The amount of hours to be added.  
+     * @param {number} value The amount of hours to be added.
      * @return {TimeSpan} Returns the current time span in order to easily chain arithmetic operations.
      */
     public addHours(value: number): TimeSpan {
@@ -250,18 +250,18 @@ class TimeSpan {
 
     /**
      * Subtracts the provided amount of hours to the time span.
-     * @param {number} value The amount of hours to be subtracted.  
+     * @param {number} value The amount of hours to be subtracted.
      * @return {TimeSpan} Returns the current time span in order to easily chain arithmetic operations.
      */
     public subtractHours(value: number): TimeSpan {
         this.timeSpanValue.subtract(value, "hours");
         return this;
     }
-    
+
     /**
      * Gets a string representation of the time span.
      * @param {string} format The format string.
-     * @param {CultureInfo} culture The format provider that is used to format the string. If none is provided, the current culture is used. 
+     * @param {CultureInfo} culture The format provider that is used to format the string. If none is provided, the current culture is used.
      * @return {string} Returns the string representation of the time span.
      */
     public toString(format?: string, culture?: CultureInfo): string {

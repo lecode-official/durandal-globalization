@@ -1,5 +1,5 @@
-///<amd-module name='Globalization/Numeric'/>
-define("Globalization/Numeric", ["require", "exports", "Globalization/CultureInfo", "numeral"], function (require, exports, CultureInfo, numeral) {
+///<amd-module name='durandal-globalization/Numeric'/>
+define("durandal-globalization/Numeric", ["require", "exports", "durandal-globalization/CultureInfo", "numeral"], function (require, exports, CultureInfo, numeral) {
     "use strict";
     // #endregion
     /**
