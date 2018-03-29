@@ -1,4 +1,10 @@
 
 {
-    "typescript.tsdk": "node_modules/typescript/lib/"
+    "typescript.tsdk": "node_modules/typescript/lib/",
+    "cSpell.language": "en,de",
+    "cSpell.words": [
+        "Rögner",
+        "durandal",
+        "unformat"
+    ]
 }

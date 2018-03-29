@@ -166,7 +166,7 @@ define("durandal-globalization/DateTime", ["require", "exports", "durandal-globa
          * Initializes a new DateTime instance from a string (if no format string are specified, then the method intelligently tries to find out which format the date time has).
          * @param {string} value The string that is to be parsed and converted into a DateTime object.
          * @param {string} format The format string that is used to parse the string.
-         * @param {CultureInfo} culture The culture in which the string is to be interpreted (only works in conjuction with a locale format string, e.g. "LLLL").
+         * @param {CultureInfo} culture The culture in which the string is to be interpreted (only works in conjunction with a locale format string, e.g. "LLLL").
          * @return {DateTime|null} Returns the parsed DateTime object if the string could be parsed and null otherwise.
          */
         DateTime.fromString = function (value, format, culture, interpretAsUtc) {
@@ -233,7 +233,7 @@ define("durandal-globalization/DateTime", ["require", "exports", "durandal-globa
          * @param {number} value The amount of milliseconds to be subtracted.
          * @return {DateTime} Returns the current date time in order to easily chain arithmetic operations.
          */
-        DateTime.prototype.subtractMillisecondss = function (value) {
+        DateTime.prototype.subtractMilliseconds = function (value) {
             this.dateTimeValue.subtract(value, "milliseconds");
             return this;
         };
