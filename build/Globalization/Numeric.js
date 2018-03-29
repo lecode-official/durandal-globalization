@@ -5,7 +5,7 @@ define("Globalization/Numeric", ["require", "exports", "Globalization/CultureInf
     /**
      * Represents a class that can be used to deal with localized number formats.
      */
-    var Numeric = (function () {
+    var Numeric = /** @class */ (function () {
         // #region Constructors
         /**
          * Initializes a new Numeric instance.

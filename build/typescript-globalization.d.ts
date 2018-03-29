@@ -98,11 +98,7 @@ declare module 'Globalization/CultureInfo' {
 	export = CultureInfo;
 
 }
-
-/// <reference path="../../bower_components/DefinitelyTyped/moment/moment.d.ts" />
-/// <reference path="../../bower_components/DefinitelyTyped/numeraljs/numeraljs.d.ts" />
 declare module 'Globalization/DateTime' {
-	/// <reference path="../Typings/References.d.ts" />
 	import CultureInfo = require("Globalization/CultureInfo");
 	import TimeSpan = require("Globalization/TimeSpan"); class DateTime {
 	    /**
@@ -306,7 +302,6 @@ declare module 'Globalization/DateTime' {
 
 }
 declare module 'Globalization/Numeric' {
-	/// <reference path="../Typings/References.d.ts" />
 	import CultureInfo = require("Globalization/CultureInfo"); class Numeric {
 	    /**
 	     * Initializes a new Numeric instance.
@@ -406,7 +401,6 @@ declare module 'Globalization/NumericFormatInfo' {
 
 }
 declare module 'Globalization/TimeSpan' {
-	/// <reference path="../Typings/References.d.ts" />
 	import CultureInfo = require("Globalization/CultureInfo");
 	import DateTime = require("Globalization/DateTime"); class TimeSpan {
 	    /**

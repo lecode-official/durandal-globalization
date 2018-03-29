@@ -5,7 +5,7 @@ define("Globalization/CultureInfo", ["require", "exports", "Globalization/Numeri
     /**
      * Represents a class, that provides information about a specific culture.
      */
-    var CultureInfo = (function () {
+    var CultureInfo = /** @class */ (function () {
         // #region Constructors
         /**
          * Initializes a new CultureInfo instance.

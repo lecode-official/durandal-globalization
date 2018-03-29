@@ -5,7 +5,7 @@ define("Globalization/DateTime", ["require", "exports", "Globalization/CultureIn
     /**
      * Represents an implementation of a culture-aware date object.
      */
-    var DateTime = (function () {
+    var DateTime = /** @class */ (function () {
         // #region Constructors
         /**
          * Initializes a new DateTime instance.

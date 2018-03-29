@@ -5,7 +5,7 @@ define("Globalization/TimeSpan", ["require", "exports", "Globalization/CultureIn
     /**
      * Represents an implementation of a time span that can be used to do date and time calculation.
      */
-    var TimeSpan = (function () {
+    var TimeSpan = /** @class */ (function () {
         // #region Constructors
         /**
          * Initializes a new TimeSpan instance.

@@ -4,7 +4,7 @@ define("Globalization/NumericFormatInfo", ["require", "exports"], function (requ
     /**
      * Represents an object that contains information about a specific number format. This is used by a CultureInfo to determine the default numeric format of the culture.
      */
-    var NumericFormatInfo = (function () {
+    var NumericFormatInfo = /** @class */ (function () {
         // #region Constructors
         /**
          * Initializes a new NumericFormatInfo instance.

@@ -3,8 +3,6 @@
 
 // #region Import Directives
 
-/// <reference path="../Typings/References.d.ts" />
-
 import CultureInfo = require("Globalization/CultureInfo");
 import DateTime = require("Globalization/DateTime");
 import moment = require("moment");
