@@ -6,7 +6,7 @@
   "description": "A simple globalization library written in TypeScript. It supports numerical, date, and time processing based on different cultures.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lecode-official/typescript-globalization.git"
+    "url": "git+https://github.com/lecode-official/durandal-globalization.git"
   },
   "keywords": [
     "Globalization",
@@ -20,9 +20,9 @@
   "author": "David Neumann & Lukas Rögner",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lecode-official/typescript-globalization/issues"
+    "url": "https://github.com/lecode-official/durandal-globalization/issues"
   },
-  "homepage": "https://github.com/lecode-official/typescript-globalization#readme",
+  "homepage": "https://github.com/lecode-official/durandal-globalization#readme",
   "dependencies": {
     "moment": "2.15.2",
     "numeral": "1.5.3"
