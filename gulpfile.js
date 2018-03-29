@@ -24,7 +24,7 @@ gulp.task("default", [
     "watch"
 ]);
 
-// Defines a gulp task, which continously watches the source files and rebuilds the project if anything has changed
+// Defines a gulp task, which continuously watches the source files and rebuilds the project if anything has changed
 gulp.task("watch", function() {
     gulp.watch(paths.sourceFiles, ["build:typescript"]);
 });
@@ -44,7 +44,7 @@ gulp.task("clean", function() {
         .pipe(clean());
 });
 
-// Defins a gulp task, which compiles the TypeScript files
+// Defines a gulp task, which compiles the TypeScript files
 gulp.task("build:typescript", function() {
     return gulp
         .src(paths.sourceFiles)
@@ -53,7 +53,7 @@ gulp.task("build:typescript", function() {
         .pipe(gulp.dest(paths.buildPath));
 })
 
-// Defins a gulp task, which compiles the TypeScript definition files
+// Defines a gulp task, which compiles the TypeScript definition files
 gulp.task("build:typings", function() {
     dts.default({
         project: paths.basePath,
