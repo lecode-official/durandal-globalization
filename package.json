@@ -1,7 +1,6 @@
 {
   "name": "durandal-globalization",
   "displayName": "Durandal Globalization",
-  "private": true,
   "version": "0.1.2",
   "description": "A simple globalization library written in TypeScript. It supports numerical, date, and time processing based on different cultures.",
   "repository": {
@@ -25,10 +24,10 @@
   "homepage": "https://github.com/lecode-official/durandal-globalization#readme",
   "dependencies": {
     "moment": "2.15.2",
-    "numeral": "1.5.3"
+    "numeral": "1.5.3",
+    "@types/numeral": "0.0.16"
   },
   "devDependencies": {
-    "@types/numeral": "0.0.16",
     "dts-generator": "2.0.0",
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
@@ -36,5 +35,6 @@
     "run-sequence": "1.2.2",
     "typescript": "^2.0.3"
   },
-  "types": "./build/durandal-globalization.d.ts"
+  "types": "./build/durandal-globalization.d.ts",
+  "typings": "./build/durandal-globalization.d.ts"
 }
